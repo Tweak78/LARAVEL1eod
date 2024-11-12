@@ -49,7 +49,7 @@
             <textarea name="description" id="description" class="form-control" required>{{ old('description', $serie->description) }}</textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Series</button>
+        <button type="submit" class="btn btn-primary">Update series</button>
     </form>
 
     <a href="{{ route('home') }}" class="btn btn-custom">Back to Home</a>
