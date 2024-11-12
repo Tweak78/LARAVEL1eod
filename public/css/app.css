@@ -1,0 +1,193 @@
+/* General body styles */
+body {
+    background: #f0f4f8; /* Soft off-white background for a clean look */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    color: #444; /* Dark grey for readability */
+    display: flex; /* Use flex to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 1rem; /* Add padding to avoid overflow on small screens */
+}
+
+/* Container styles */
+.container {
+    max-width: 600px; /* Width for compactness */
+    width: 100%; /* Responsive width */
+    padding: 1.5rem; /* Adjusted inner padding for better fit */
+    background-color: #ffffff; /* White background for container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    display: flex;
+    flex-direction: column; /* Column layout */
+    align-items: stretch; /* Allow items to stretch for better fit */
+}
+
+/* Heading styles */
+h1 {
+    color: #3f51b5; /* Deep blue */
+    font-size: 2.5rem; /* Larger heading size */
+    text-align: center; /* Centered heading */
+    margin: 0 0 0.5rem; /* Space below heading */
+}
+
+h2 {
+    color: #666; /* Medium grey for subheadings */
+    font-size: 1.5rem; /* Subheading size */
+    margin: 0 0 1.5rem; /* Space below subheading */
+}
+
+/* Form styles */
+form {
+    width: 100%; /* Full width form */
+    display: flex;
+    flex-direction: column; /* Column layout */
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 0.75rem; /* Padding for inputs */
+    margin: 0.5rem 0; /* Space between inputs */
+    border: 1px solid #3f51b5; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background for inputs */
+    color: #333; /* Dark text */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+    transition: border-color 0.3s; /* Smooth transition for border */
+}
+
+/* Focus styles for inputs */
+input:focus,
+textarea:focus {
+    border-color: #3f51b5; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder text styles */
+input::placeholder,
+textarea::placeholder {
+    color: #999; /* Light grey placeholder text */
+}
+
+/* Button group styles */
+.button-group {
+    display: flex; /* Flex for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 1rem; /* Space above button group */
+}
+
+/* Button styles */
+.btn {
+    flex: 1; /* Allow buttons to stretch equally */
+    padding: 0.7rem; /* Consistent padding */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    font-size: 1rem; /* Consistent font size */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    margin: 0 0.5rem; /* Margin between buttons */
+    display: flex; /* Flex to center content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: #3f51b5; /* Deep blue for primary button */
+    color: white; /* White text */
+}
+
+/* Primary button hover */
+.btn-primary:hover {
+    background-color: #303f9f; /* Darker blue on hover */
+    box-shadow: 0 4px 20px rgba(63, 81, 181, 0.3); /* Shadow on hover */
+}
+
+/* Danger button */
+.btn-danger {
+    background-color: #e91e63; /* Pink for danger button */
+    color: white; /* White text */
+}
+
+/* Danger button hover */
+.btn-danger:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    box-shadow: 0 4px 20px rgba(233, 30, 99, 0.3); /* Shadow on hover */
+}
+
+/* Custom button */
+.btn-custom {
+    background-color: lightgray; /* Green for custom button */
+    color: white; /* White text */
+}
+
+/* Custom button hover */
+.btn-custom:hover {
+    background-color: gray; /* Darker green on hover */
+    box-shadow: 0 4px 20px rgba(71, 71, 71, 0.3); /* Shadow on hover */
+}
+
+/* List styles */
+.list {
+    width: 100%; /* Full width for list */
+    margin-top: 1rem; /* Space above list */
+    padding: 0; /* Reset padding */
+    list-style-type: none; /* Remove bullets */
+}
+
+/* List item styles */
+.list-item {
+    background-color: #e0e0e0; /* Light grey for list items */
+    border-radius: 8px; /* Rounded corners */
+    margin: 0.5rem 0; /* Space between items */
+    padding: 1rem; /* Inner padding */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* List item hover effect */
+.list-item:hover {
+    background-color: #d6d6d6; /* Slightly darker grey on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller heading for tablets */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Smaller subheading for tablets */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Slightly smaller buttons */
+    }
+
+    .container {
+        padding: 1rem; /* Reduce padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    h2 {
+        font-size: 1rem; /* Smaller subheading for mobile */
+    }
+
+    .btn {
+        padding: 0.5rem; /* Adjust button padding further for mobile */
+    }
+
+    input,
+    textarea {
+        padding: 0.5rem; /* Reduce input padding for mobile */
+    }
+}
