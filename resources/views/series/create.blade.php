@@ -50,7 +50,7 @@
         <div class="form-group">
             <label for="description">Description:</label>
             <textarea name="description" id="description" class="form-control"
-                      required maxlength="3000" rows="5" placeholder="Max 500 words "></textarea>
+                      required maxlength="100" rows="5" placeholder="Max 100 words "></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Create Series</button>
